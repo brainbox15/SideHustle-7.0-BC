@@ -1,3 +1,9 @@
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
 table{
     background-color: #000;
     color: #fff;
@@ -46,4 +52,12 @@ thead{
 
 #del{
     background-color: red;
+}
+
+#edit, #view{
+    background-color: gray;
+}
+
+#view, #del, #edit:hover{
+    cursor: pointer;
 }

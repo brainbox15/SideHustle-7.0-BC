@@ -11,7 +11,7 @@
 
 <body>
 <header>
-    <div><p>PenSpace</p></div>
+    <div><p id="logo">PenSpace</p></div>
     <div><a href="login.php"><button>Log in</button></a></div>
 </header>
 <div id="form">

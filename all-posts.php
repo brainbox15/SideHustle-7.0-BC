@@ -34,9 +34,9 @@ $posts = mysqli_query($connect, 'SELECT * FROM posts');
         <td><?= $post['title'] ?></td>
         <td><?= $post['content'] ?></td>
         <td>
-        <a href="edit-post.php?ID=<?= $post['ID'] ?>"><button>Edit</button></a>
+        <a href="edit-post.php?ID=<?= $post['ID'] ?>"><button id="edit">Edit</button></a>
         <a href="delete-post.php?ID=<?= $post['ID'] ?>"><button id="del">Delete</button></a>
-        <a href="view-post.php?ID=<?= $post['ID'] ?>"><button>View</button></a>
+        <a href="view-post.php?ID=<?= $post['ID'] ?>"><button id="view">View</button></a>
 
         </td>
 

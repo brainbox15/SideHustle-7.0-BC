@@ -12,17 +12,24 @@ body{
 
 
 header{
-    background-color: gray;
+    background-color: #fff;
     padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+ #logo{
+    color: rgba(0, 0, 255, 0.836);
+}
+
+#logo a{
+    text-decoration: none;
+}
+
 
 header p{
     font-size: 30px;
-    color: #fff;
 
 }
 
@@ -73,6 +80,7 @@ form #login{
     font-size: 1.5em;
     background-color: rgb(32, 32, 175);
     margin-bottom: 10px;
+    color: #fff;
 }
 
 
@@ -81,3 +89,4 @@ form #login:hover{
     cursor: pointer;
     background-color: rgb(38, 38, 161);
 }
+

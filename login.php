@@ -9,8 +9,8 @@
 </head>
 <body>
 <header>
-    <div><a href="index.php"><p>PenSpace</p></a></div>
-    <div><a href="index.php"><button>Sign Up</button></a></div>
+    <div id="logo" ><a href="home.php"><p>PenSpace</p></a></div>
+    <div><a href="signup.php"><button>Sign Up</button></a></div>
 </header>
 
 
