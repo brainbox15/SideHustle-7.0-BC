@@ -50,20 +50,20 @@ if (isset($_POST['save_user'])) {
 
     // confirming pass & confrirm pass matches.
     if ($pass !== $confirm_pass) {
-        exit("<p>password do not match</p><a href='index.php'>Go back</a</p>");
+        exit("<p>password do not match</p><a href='signup.php'>Go back</a</p>");
     }
 
     // checking if email already exist
     $email_exist = mysqli_query($connect, "SELECT * FROM users WHERE email = '$email'");
     if (mysqli_num_rows($email_exist) > 0) {
-        exit("<p>email already exist</p><a href='index.php'>login</a>");
+        exit("<p>email already exist</p><a href='login.php'>login</a>");
 
     }
 
     //   checking if username already exist
     $username_exist = mysqli_query($connect, "SELECT * FROM users WHERE user_name = '$user_name'");
     if (mysqli_num_rows($username_exist) > 0) {
-        exit("<p>User name already exist</p><a href='index.php'>Go back</a>");
+        exit("<p>User name already exist</p><a href='signup.php'>Go back</a>");
 
     }
 
@@ -89,7 +89,7 @@ if (isset($_POST['save_user'])) {
     
         // if user does not exist
         if(!mysqli_num_rows($user_exist)){
-            exit("<p>User not found</p> <p><a href='index.php'>Sign up</a></p> <p><a href='login.php'>Go back</a></p>");        
+            exit("<p>User not found</p> <p><a href='signup.php'>Sign up</a></p> <p><a href='login.php'>Go back</a></p>");        
         }
       
         $user_details = mysqli_fetch_assoc($user_exist);
